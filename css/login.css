@@ -1,0 +1,95 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-image: url(/img/books.jpg);
+  color: #fff;
+}
+.p {
+  margin-left: 185px;
+  padding-top: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.body .row {
+  width: 20%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.img {
+  width: 226px;
+  height: 44px;
+  top: 198px;
+  left: 515px;
+}
+.body .row .inp {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.body .row .inp .inps {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+.body .row .inp .inps i {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  background: #fff;
+  border-radius: 10px;
+}
+.body .row .inp .inps input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background: #e2dfea;
+  border-radius: 0  10px 10px 0;
+}
+.body .row .btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body .row .btn button {
+  width: 80%;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  background: #fff;
+  color: #2825d3;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 15px;
+}

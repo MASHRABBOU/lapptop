@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Video Management</title>
+</head>
+<body>
+    <h1>Admin Panel - Video Management</h1>
+    
+    <input type="file" id="videoFile" accept="video/*">
+    <button onclick="uploadVideo()">Upload Video</button>
+
+    <h2>Uploaded Videos</h2>
+    <ul id="videoList"></ul>
+
+    <script>
+        function uploadVideo() {
+            const fileInput = document.getElementById('videoFile');
+            const file = fileInput.files[0];
+
+            if (file) {
+                const formData = new FormData();
+                formData.append('video', file);
+
+                fetch('/upload', { // Serverda '/upload' marshrutini sozlash kerak
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        displayVideos();
+                    } else {
+                        alert('Video upload failed.');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            } else {
+                alert('Please select a video file.');
+            }
+        }
+
+        function displayVideos() {
+            fetch('/videos') // Serverda '/videos' marshrutini sozlash kerak
+            .then(response => response.json())
+            .then(data => {
+                const videoList = document.getElementById('videoList');
+                videoList.innerHTML = '';
+
+                data.videos.forEach(video => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <video src="${video.url}" controls width="320"></video>
+                        <button onclick="deleteVideo('${video.filename}')">Delete</button>
+                    `;
+                    videoList.appendChild(li);
+                });
+            });
+        }
+
+        function deleteVideo(filename) {
+            fetch(`/delete/${filename}`, { method: 'DELETE' }) // Serverda '/delete/:filename' marshrutini sozlash kerak
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    displayVideos();
+                } else {
+                    alert('Video deletion failed.');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        // Display videos on page load
+        displayVideos();
+    </script>
+</body>
+</html>

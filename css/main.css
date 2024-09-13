@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.h1 {
+  text-align: center;
+}
+.kichik {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+.kichik {
+  text-align: center;
+}
+.h5 {
+  font-size: 20px;
+}
+.cards {
+  border-radius: 20px 20px 0 0;
+  background: green;
+}
+.tx {
+  align-items: center;
+  justify-content: center;
+}
+.sahifa {
+  display: flex;
+  grid-gap: 1070px;
+}
+.btn {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  padding: 10px 20px;
+  background: #fff;
+  height: 50px;
+  /* color: white; */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.1s;
+  width: 150px;
+}
+.btn-one {
+  display: flex;
+  grid-gap: 10px;
+}
+.btn-three {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  padding: 10px 20px;
+  background: #fff;
+  height: 50px;
+  /* color: white; */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 150px;
+}
+.btn-three:hover {
+  background: red;
+  color: #fff;
+}
+.btn:hover {
+  background: red;
+  color: #fff;
+}
+.button {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  padding: 10px 20px;
+  background: #fff;
+  height: 50px;
+  /* color: white; */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 150px;
+}
+.button:hover {
+  background: rgb(42, 78, 176);
+  color: #fff;
+}
+.button-btn {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  padding: 10px 20px;
+  background: #fff;
+  height: 50px;
+  /* color: white; */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 150px;
+}
+.button-btn:hover {
+  background: blue;
+  color: #fff;
+}
+.Pinterest{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  padding: 10px 20px;
+  background: #fff;
+  height: 50px;
+  /* color: white; */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 150px;
+}
+.Pinterest:hover {
+  background: rgb(222, 54, 28);
+  color: #fff;
+}
+.Tumblr{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  padding: 10px 20px;
+  background: #fff;
+  height: 50px;
+  /* color: white; */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 150px;
+}
+.Tumblr:hover {
+  background: rgb(1, 1, 108);
+  color: #fff;
+}
+.Twitter{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+  padding: 10px 20px;
+  background: #fff;
+  height: 50px;
+  /* color: white; */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 150px;
+}
+.Twitter:hover {
+  background: black;
+  color: #fff;
+}
+.a-tx {
+  color: black;
+  text-decoration: none;
+}
+.a-tx:hover {
+  color: black;
+}
+.videolar {
+  padding: 30px 50px;
+  grid-gap: 20px;
+  text-align: center;
+}
+.carsd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  color: black;
+  text-align: center; /* Videolarni o'rtaga olish */
+  display: inline-block; /* Divlarni bitta qatorga joylashtirish */
+  margin: 10px; /* Orqaliyorlash */
+}
+.video-one {
+  width: 100%;
+  border-radius: 30px;
+  height: 600px;
+}
+.carsd-text {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.h4-text {
+  font-size: 30px;
+}
+.obzor {
+  font-size: 15px;
+}
+.Sainup {
+  width: 150px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: rgb(0, 128, 128);
+  transition: all 0.5s;
+}
+.Sainup:hover {
+  background-color: #fff;
+}
+@media only screen and (max-width: 1300px) {
+  /* Telefon ekrani uchun stilni yozing */
+  .sahifa {
+    display: flex;
+    grid-gap: 1000px;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  /* Telefon ekrani uchun stilni yozing */
+  .sahifa {
+    display: flex;
+    grid-gap: 800px;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  /* Telefon ekrani uchun stilni yozing */
+  .sahifa {
+    display: flex;
+    grid-gap: 750px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  /* Telefon ekrani uchun stilni yozing */
+  .sahifa {
+    display: flex;
+    grid-gap: 500px;
+  }
+}
